@@ -6,5 +6,9 @@
     <string name="bem_vindo">Bem Vindo ao Time Manager!</string><string name="hello_world">Hello world!</string>
     
     <color name="gray">#222</color>
+    
+    <string name="horas">Horas Gastas</string>
+    
+    <string name="atividade">Atividade Realizada</string>
 
 </resources>
