@@ -10,5 +10,7 @@
     <string name="horas">Horas Gastas</string>
     
     <string name="atividade">Atividade Realizada</string>
+    
+    <string name="ok">OK</string>
 
 </resources>
