@@ -6,7 +6,7 @@ O ActiveAndroid é uma ORM(Object-relational mapping) que permite salvar e recup
 
 basicamente funciona da seguinte forma:
 
-- faz com que sua class à ser persistida extends de Model 
+- Sua classe à ser persistida deve tem um extends de Model 
 como por exemplo nessa classe -> https://github.com/ClaudivanFilho/ActiveAndroid-Exemplo/blob/master/src/com/timemanager/model/Atividade.java
 
 - e para fazer persistir ou mesmo deletar do banco de dados, utiliza os comandos save ou delete
