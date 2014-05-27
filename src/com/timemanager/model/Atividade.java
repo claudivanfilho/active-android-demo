@@ -1,9 +1,22 @@
 package com.timemanager.model;
 
-public class Atividade {
+import java.util.List;
 
-	protected String nome;
-	protected float horas;
+import com.activeandroid.Model;
+import com.activeandroid.annotation.Column;
+import com.activeandroid.annotation.Table;
+import com.activeandroid.query.Select;
+
+@Table(name="atividades")
+public class Atividade extends Model{
+
+	@Column
+	String nome;
+	@Column
+	float horas;
+	
+	public Atividade() {
+	}
 	
 	public Atividade(String nome, float horas) {
 		this.nome = nome;
@@ -23,8 +36,15 @@ public class Atividade {
 		this.nome = nome;
 	}
 	
+	public static List<Atividade> getAll() {
+	    return new Select()
+	        .from(Atividade.class)
+	        .orderBy("nome ASC")
+	        .execute();
+	}
+	
 	@Override
 	public String toString() {
-		return "Nome: " + nome +  "\n" + "Horas: " +  horas;
+		return "Nome: " + nome + "\n" + "Horas Gastas: " +  horas +  "\n";
 	}
 }

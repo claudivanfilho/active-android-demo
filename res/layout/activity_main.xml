@@ -16,31 +16,24 @@
         android:text="@string/bem_vindo"
         android:textSize="30sp" />
 
-    <EditText
-        android:id="@+id/campoAtividade"
-        android:layout_width="wrap_content"
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/campoHoras"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="134dp"
-        android:ems="10" />
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toLeftOf="@+id/textView2" >
 
-    <DigitalClock
-        android:id="@+id/digitalClock1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/textView1"
-        android:layout_marginTop="25dp"
-        android:text="DigitalClock"
-        android:textSize="40sp" />
+    </ListView>
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/digitalClock1"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginRight="88dp"
+        android:layout_marginTop="28dp"
         android:text="@string/horas"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textSize="30sp" />
@@ -49,9 +42,9 @@
         android:id="@+id/campoHoras"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/campoAtividade"
-        android:layout_below="@+id/textView2"
-        android:layout_marginTop="46dp"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignTop="@+id/list"
+        android:layout_marginTop="52dp"
         android:ems="10"
         android:inputType="numberDecimal" />
 
@@ -59,21 +52,30 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/campoHoras"
         android:layout_below="@+id/campoHoras"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="46dp"
         android:text="@string/atividade"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/campoAtividade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="36dp"
+        android:ems="10" />
 
     <Button
         android:id="@+id/btnConfirm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/textView3"
+        android:layout_alignLeft="@+id/campoAtividade"
         android:layout_below="@+id/campoAtividade"
-        android:layout_marginTop="60dp"
-        android:text="@string/ok" 
-        android:onClick="cadastrarAtividade" />
+        android:layout_marginTop="28dp"
+        android:onClick="cadastrarAtividade"
+        android:text="@string/ok" />
 
 </RelativeLayout>
