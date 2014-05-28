@@ -2,6 +2,10 @@
 
 O ActiveAndroid é uma ORM(Object-relational mapping) que permite salvar e recuperar os registros do banco de dados SQLite sem ter que escrever uma única instrução SQL.
 
+> Para usá-lo basta importar o .jar para a pasta de libs e alterar algumas configurações do AndroidManifest.xml 
+
+mais detalhes sobre a configuração aqui -> https://github.com/pardom/ActiveAndroid/wiki/Getting-started
+
 > Seu uso e instalação e extremamente facil e intuitivo.
 
 basicamente funciona da seguinte forma:
