@@ -10,7 +10,7 @@ mais detalhes sobre a configuração aqui -> https://github.com/pardom/ActiveAnd
 
 basicamente funciona da seguinte forma:
 
-- Sua classe à ser persistida deve tem um extends de Model 
+- Sua classe à ser persistida deve tem um extends de Model e as anotações para definir seus atributos
 como por exemplo nessa classe -> https://github.com/ClaudivanFilho/ActiveAndroid-Exemplo/blob/master/src/com/timemanager/model/Atividade.java
 
 - e para fazer persistir ou mesmo deletar do banco de dados, utiliza os comandos save ou delete
